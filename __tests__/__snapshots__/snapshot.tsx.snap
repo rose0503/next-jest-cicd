@@ -2,6 +2,12 @@
 
 exports[`renders homepage unchanged 1`] = `
 <div>
+  <a
+    class="linkBack"
+    href="/"
+  >
+     Back to App
+  </a>
   <div
     class="container"
   >
