@@ -1,12 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/pages/index.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
+    <>
+      <Link className={styles.linkBack} href="/"> Back to App</Link>
+    
+      <div className={styles.container}>
+        <Head>
+          <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -59,6 +63,7 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
